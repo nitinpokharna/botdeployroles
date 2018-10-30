@@ -91,9 +91,6 @@
         "administratorLoginPassword": {
             "type": "securestring"
         },
-        "collation": {
-            "type": "string"
-        },
         "databaseName": {
             "type": "string"
         },
@@ -206,7 +203,7 @@
               "[parameters('serverName')]"
             ],
             "properties": {
-			"collation": "[parameters('collation')]",
+			"collation": "SQL_Latin1_General_CP1_CI_AS",
                         "maxSizeBytes": "[parameters('maxSizeBytes')]",
                         "sampleName": "[parameters('sampleName')]",
                         "zoneRedundant": "[parameters('zoneRedundant')]",
