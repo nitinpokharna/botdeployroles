@@ -34,6 +34,10 @@
 		"appId": {
 			"type": "string"
 		},
+		 "appSecret": {
+            		"type": "string",
+            		"defaultValue": "blank"
+        	},
 		"azureWebJobsBotFrameworkDirectLineSecret": {
 			"type": "string",
 			"defaultValue": ""
