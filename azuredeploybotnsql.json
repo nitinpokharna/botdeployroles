@@ -34,7 +34,7 @@
 		"appId": {
 			"type": "string"
 		},
-		 "appSecret": {
+		"appSecret": {
             		"type": "string",
             		"defaultValue": "blank"
         	},
