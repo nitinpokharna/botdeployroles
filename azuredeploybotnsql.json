@@ -208,7 +208,7 @@
                         "zoneRedundant": "[parameters('zoneRedundant')]",
                         "licenseType": "[parameters('licenseType')]"
             },
-		 {
+		{
                     "condition": "[parameters('allowAzureIps')]",
                     "apiVersion": "2014-04-01-preview",
                     "dependsOn": [
@@ -221,7 +221,7 @@
                         "startIpAddress": "0.0.0.0"
                     },
                     "type": "firewallrules"
-                }
+		}
           }
         ]
       },
