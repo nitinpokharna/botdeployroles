@@ -204,6 +204,12 @@
 						"licenseType": "[parameters('licenseType')]"
 					}
 				},
+				        	  "sku": {
+                       					 "name": "[parameters('skuName')]",
+                       					 "tier": "[parameters('tier')]"
+                    		},
+                    					"type": "databases"
+                		},
 				{
 					"condition": "[parameters('allowAzureIps')]",
 					"apiVersion": "2014-04-01-preview",
