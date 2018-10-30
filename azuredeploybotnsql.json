@@ -207,7 +207,21 @@
                         "sampleName": "[parameters('sampleName')]",
                         "zoneRedundant": "[parameters('zoneRedundant')]",
                         "licenseType": "[parameters('licenseType')]"
-            }
+            },
+		 {
+                    "condition": "[parameters('allowAzureIps')]",
+                    "apiVersion": "2014-04-01-preview",
+                    "dependsOn": [
+                        "[concat('Microsoft.Sql/servers/', parameters('serverName'))]"
+                    ],
+                    "location": "[parameters('location')]",
+                    "name": "AllowAllWindowsAzureIps",
+                    "properties": {
+                        "endIpAddress": "0.0.0.0",
+                        "startIpAddress": "0.0.0.0"
+                    },
+                    "type": "firewallrules"
+                }
           }
         ]
       },
