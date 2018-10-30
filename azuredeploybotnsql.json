@@ -33,7 +33,6 @@
         },
         "appId": {
             "type": "string",
-            "defaultValue": "1234"
         },
         "appSecret": {
             "type": "string",
